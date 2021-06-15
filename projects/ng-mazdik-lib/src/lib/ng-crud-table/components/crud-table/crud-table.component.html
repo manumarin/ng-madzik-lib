@@ -20,13 +20,11 @@
   <button class="dt-button-actions" [ngClass]="{'cell-changed':dataManager.rowChanged(row)}" (click)="viewAction(row)">
       <i class="dt-icon-actions"></i>
     </button>
-  </ng-template>
-  <ng-template #rowActionTemplate let-row="row">
+
     <button class="dt-button-actions" [ngClass]="{'cell-changed':dataManager.rowChanged(row)}" (click)="updateAction(row)">
         <i class="dt-icon-actions"></i>
       </button>
-    </ng-template>
-    <ng-template #rowActionTemplate let-row="row">
+
       <button class="dt-button-actions" [ngClass]="{'cell-changed':dataManager.rowChanged(row)}" (click)="duplicateAction(row)">
           <i class="dt-icon-actions"></i>
         </button>
