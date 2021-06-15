@@ -81,7 +81,12 @@ export class DtToolbarComponent implements OnInit, OnDestroy {
     }
   }
   changeModeList(){
-    this.dropdownService.prueba ? this.dropdownService.prueba=false : this.dropdownService.prueba=true;
+    //this.dropdownService.prueba ? this.dropdownService.prueba=false : this.dropdownService.prueba=true;
+    if(this.dropdownService.prueba){
+      this.dropdownService.prueba=false;
+    }else{
+      this.dropdownService.prueba=true;
+    }
   }
 
 }

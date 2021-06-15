@@ -42,6 +42,7 @@ export interface DtMessages {
   columns: string;
   actions: string;
   changeMode: string;
+  cambiarModo: string;
 }
 
 export class DtMessagesEn implements DtMessages {
@@ -88,6 +89,7 @@ export class DtMessagesEn implements DtMessages {
   columns = 'Columns';
   actions = 'Actions';
   changeMode = 'Show List';
+  cambiarModo = 'Cambiar Modo';
 
   constructor(init?: Partial<DtMessagesEn>) {
     if (init) {

@@ -125,8 +125,8 @@ export class CrudTableComponent implements OnInit, OnDestroy {
           command: (row) => this.duplicateAction(row),
         },
         {
-          id: "cambiarModo",
-          label: "Cambiar Modo",
+          id: this.dataManager.messages.cambiarModo,
+          label: this.dataManager.messages.cambiarModo,
           icon: 'dt-icon dt-icon-plus',
           command: (row) => this.cambiarModoMenu(),
         },
@@ -148,7 +148,7 @@ export class CrudTableComponent implements OnInit, OnDestroy {
   }
   // Mostrar/Ocultar boton
   cambiarModoMenu(){
-    this.dropdownService.prueba=false;
+    this.dropdownService.prueba=true;
   }
 
   onRowMenuClick(event: Event, row: Row): void  {
