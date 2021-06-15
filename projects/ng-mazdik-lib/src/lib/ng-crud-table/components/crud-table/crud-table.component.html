@@ -14,7 +14,7 @@
 
 <app-context-menu #rowMenu [menu]="actionMenu"></app-context-menu>
 
-<ng-template #rowActionTemplate let-row="row">
+<ng-template *ngIf="!dropdownService.prueba" #rowActionTemplate let-row="row">
   <button class="dt-button-actions" [ngClass]="{'cell-changed':dataManager.rowChanged(row)}" (click)="onRowMenuClick($event,row)">
       <i class="dt-icon-actions"></i>
     </button>
