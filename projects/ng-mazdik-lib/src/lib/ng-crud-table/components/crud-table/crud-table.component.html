@@ -7,7 +7,7 @@
             (create)="createAction()">
 </dt-toolbar>
 
-<app-data-table [table]="dataManager"></app-data-table>
+<app-crud-table [dataManager]="dataManager"></app-crud-table>
 
 <app-modal-edit-form #modalEditForm [dataManager]="dataManager" (loaded)="onLoadedForm()">
 </app-modal-edit-form>

@@ -148,11 +148,11 @@ export class CrudTableComponent implements OnInit, OnDestroy {
   }
   // Mostrar/Ocultar boton
   cambiarModoMenu(){
-    this.dropdownService.prueba=true;
+    this.dropdownService.prueba=false;
   }
 
   onRowMenuClick(event: Event, row: Row): void  {
-    //this.dropdownService.prueba=true;
+    this.dropdownService.prueba=true;
     const { left, top } = EventHelper.getRowPosition(event, this.dataManager.settings.virtualScroll);
     this.rowMenuBeforeOpen(row);
     this.rowMenu.show({ originalEvent: event, data: row, left, top } as MenuEventArgs);
