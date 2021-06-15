@@ -15,10 +15,10 @@
 <app-context-menu #rowMenu [menu]="actionMenu"></app-context-menu>
 
 <ng-template #rowActionTemplate let-row="row">
-  <app-modal-edit-form></app-modal-edit-form>
-</ng-template>
-
-
+  <button class="dt-button-actions" [ngClass]="{'cell-changed':dataManager.rowChanged(row)}" (click)="onRowMenuClick($event,row)">
+      <i class="dt-icon-actions"></i>
+    </button>
+      </ng-template>
 
 <!--
 <ng-template *ngIf="!dropdownService.prueba" #rowActionTemplate let-row="row">
