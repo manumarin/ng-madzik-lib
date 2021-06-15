@@ -7,7 +7,7 @@
     </svg>
   </div>
 </a>
-<div class="heading-children" [ngClass]="headingChildrenClasses" *ngIf="node.hasChildren" style="background-color: red;">
+<div class="heading-children" [ngClass]="headingChildrenClasses" *ngIf="node.hasChildren">
   <app-nav-item *ngFor="let childNode of node.children"
     [node]="childNode"
     [expandedNode]="expandedNode"
