@@ -1,4 +1,4 @@
-<!--<ul>
+<ul>
   <ng-template ngFor let-item [ngForOf]="menu" let-i="index">
     <li [ngClass]="{'disabled':item.disabled}">
       <a [href]="item.url||'#'" (click)="itemClick($event, item)">
@@ -7,9 +7,4 @@
       </a>
     </li>
   </ng-template>
-</ul>-->
-<div class="btn-group btg-group-sm" role="group" aria-label="Basic example">
-  <ng-template ngFor let-item [ngForOf]="menu" let-i="index">
-  <button type="button" class="btn btn-secondary">Left</button>
-</ng-template>
-</div>
+</ul>
